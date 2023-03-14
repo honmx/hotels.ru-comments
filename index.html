@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container _container">
+        <h1 class="header__title">Comments</h1>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__container _container">
+        <div class="main__post post">
+          <div class="post__post">
+            <div class="post__img-wrapper">
+              <img src="./assets/nature.jpg" alt="nature">
+            </div>
+            <p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis reiciendis aliquid
+              excepturi, unde expedita necessitatibus doloremque neque fugiat voluptate autem vel earum? Sapiente minima
+              enim eligendi et delectus rerum dicta dolor, eveniet tempora aut ex reprehenderit harum modi explicabo
+              mollitia sed non ab aperiam fugiat nam veniam fugit natus laboriosam? Quod impedit ad eligendi eaque earum
+              quae sapiente eos suscipit animi enim nemo exercitationem odio, asperiores rem ducimus voluptatibus
+              officia. Unde minima, temporibus facilis at debitis accusantium, sint repudiandae vero eos ex dolor
+              aliquid doloribus nam reprehenderit fuga quas hic tenetur? Eveniet iusto distinctio ullam magni illo
+              facilis. Aliquid, itaque?</p>
+          </div>
+          <hr>
+          <div class="post__comments comments">
+            <p class="comments__title">Comments</p>
+            <div class="comments__form-container">
+              <form action="#" class="comments__form form">
+                <div class="form__input-container">
+                  <div class="form__name-input-wrapper">
+                    <input type="text" name="name" class="form__name-input input" placeholder="Your name">
+                  </div>
+                  <div class="form__date-input-wrapper">
+                    <input name="date" class="form__date-input input" 
+                      placeholder="Date (optional)" onfocus="(this.type='date')"
+                      onblur="if(this.value==''){this.type='text'}"
+                    >
+                  </div>
+                </div>
+                <div class="form__text-input-wrapper">
+                  <textarea name="text" type="text" class="form__text-input input"
+                    placeholder="Your comment"></textarea>
+                </div>
+                <input type="submit" name="button" class="form__btn btn" value="Add comment">
+              </form>
+            </div>
+            <ul class="comments__comments-list">
+              <div class="comments__sort-input sort-input">
+                <p class="sort-input__text">Sort by: </p>
+                <form action="#" class="sort-input__form">
+                  <select name="sort" class="sort-input__select input">
+                    <option value="oldest">Oldest</option>
+                    <option value="newest" selected>Newest</option>
+                    <option value="most popular">Most popular</option>
+                    <option value="least popular">Least popular</option>
+                  </select>
+                </form>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container _container"></div>
+    </footer>
+  </div>
+  <script src="./index.js"></script>
+</body>
+
+</html>
